@@ -1,0 +1,57 @@
+{
+    "name": "theme-json-autosuggest",
+    "displayName": "WordPress Theme.json Autosuggest",
+    "description": "CSS autosuggestions from theme.json variables",
+    "version": "1.0.0",
+    "keywords": [
+        "WordPress",
+        "theme.json",
+        "css variables",
+        "autocomplete",
+        "suggestions"
+    ],
+    "engines": {
+        "vscode": "^1.99.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:css",
+        "onLanguage:scss",
+        "onLanguage:less"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "WP Theme Vars Settings",
+            "properties": {
+                "theme-json-autosuggest.themeJsonPath": {
+                    "type": "string",
+                    "default": "theme.json",
+                    "description": "The path to theme.json relative to the workspace root."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.99.0",
+        "@typescript-eslint/eslint-plugin": "^8.28.0",
+        "@typescript-eslint/parser": "^8.28.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "eslint": "^9.23.0",
+        "typescript": "^5.8.2"
+    }
+}
