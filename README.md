@@ -1,6 +1,6 @@
 # WordPress Theme.json Autosuggest
 
-Autocomplete CSS variables from your WordPress theme.json.
+VS Code extension that autocompletes CSS variables from your WordPress theme.json.
 
 ## Features
 
@@ -29,8 +29,8 @@ A valid `theme.json` file is also required in your workspace to enable suggestio
 
 This extension contributes the following setting:
 
--   `theme-json-autosuggest.themeJsonPath`  
-    Path to your `theme.json` file. If left blank, the extension will use the `theme.json` located in the workspace root.
+`theme-json-autosuggest.themeJsonPath` <br>
+Path to your `theme.json` file. If left blank, the extension will use the `theme.json` located in the workspace root.
 
 ## Change Log
 
