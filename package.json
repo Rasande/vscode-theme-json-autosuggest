@@ -2,7 +2,7 @@
     "name": "theme-json-autosuggest",
     "displayName": "WordPress Theme.json Autosuggest",
     "description": "CSS autosuggestions from theme.json variables",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "Rasande",
     "repository": {
         "type": "git",
