@@ -54,7 +54,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 				const fontFamilies = theme.settings?.typography?.fontFamilies ?? [];
 				const layoutVars = theme.settings?.layout ?? {};
-				const rootPadding = theme.settings?.useRootPaddingAwareAlignments ? theme.styles?.padding : null;
+				const rootPadding = theme.settings?.useRootPaddingAwareAlignments ? theme.styles?.spacing?.padding : null;
 				const blockGap = theme.settings?.spacing?.blockGap && theme.styles?.spacing?.blockGap ? { slug: 'block-gap', name: 'Block gap', value: theme.styles?.spacing?.blockGap } : null;
 
 				const customVars = util.flattenVars(theme.settings?.custom ?? {});
